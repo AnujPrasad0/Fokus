@@ -10,9 +10,8 @@
   --color-strawberry: #ff3131;
 } */
 
-html,
 body {
-  overscroll-behavior-x: none;
+  overflow-x: hidden;
 }
 
 .link,
