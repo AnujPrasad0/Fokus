@@ -178,7 +178,7 @@ const Navbar = () => {
 
       <div
         id="cart"
-        className="absolute z-20 flex-col gap-3 bg-white h-150 md:h-170 md:w-150 w-[93%] top-0 -right-[50rem] m-3 rounded-2xl py-4 border-stone-400 border"
+        className="absolute hidden z-20 flex-col gap-3 bg-white h-150 md:h-170 md:w-150 w-[93%] top-0 -right-[50rem] m-3 rounded-2xl py-4 border-stone-400 border"
       >
         <div className="flex items-center justify-between mx-4">
           <span className="roboto text-xl">My Cart (2)</span>
