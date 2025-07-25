@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+/* @theme {
+  --color-kiwi: #7ed957;
+  --color-mango: #f7d23f;
+  --color-strawberry: #ff3131;
+} */
+
+html,
+body {
+  overscroll-behavior-x: none;
+}
+
+.link,
+.link-black {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  width: -100%;
+}
+
+.link::after,
+.link-black::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.link-black::after {
+  background-color: #000;
+}
+
+.link:hover::after,
+.link-black:hover::after {
+  width: 110%;
+}
+
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+  }
+}
+
+@theme {
+  --animate-slowspin: slowspin 4s linear infinite;
+
+  @keyframes slowspin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
